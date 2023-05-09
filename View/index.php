@@ -45,7 +45,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.php" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -70,7 +69,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.php" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -95,7 +93,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.php" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -121,7 +118,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -147,7 +143,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -173,7 +168,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -199,7 +193,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -410,7 +403,6 @@
 
                         <!-- Post Content -->
                         <div class="post-content">
-                            <a href="#" class="post-cata cata-sm cata-success">Sports</a>
                             <a href="single-post.html" class="post-title">Warner Bros. Developing ‘The accountant’
                                 Sequel</a>
                             <div class="post-meta d-flex">
@@ -435,7 +427,6 @@
 
                         <!-- Post Content -->
                         <div class="post-content">
-                            <a href="#" class="post-cata cata-sm cata-danger">Game</a>
                             <a href="single-post.html" class="post-title">Searching for the 'angel' who held me on
                                 Westminste Bridge</a>
                             <div class="post-meta d-flex">
@@ -460,7 +451,6 @@
 
                         <!-- Post Content -->
                         <div class="post-content">
-                            <a href="#" class="post-cata cata-sm cata-primary">Business</a>
                             <a href="single-post.html" class="post-title">Love Island star's boyfriend found dead after
                                 her funeral</a>
                             <div class="post-meta d-flex">
@@ -494,7 +484,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -518,7 +507,6 @@
 
                                 <!-- Post Content -->
                                 <div class="post-content">
-                                    <a href="#" class="post-cata">Sports</a>
                                     <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
@@ -550,7 +538,6 @@
 
                                     <!-- Post Content -->
                                     <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-danger">Game</a>
                                         <a href="single-post.html" class="post-title">Searching for the 'angel' who held
                                             me on Westminste
                                             Bridge</a>
@@ -578,7 +565,6 @@
 
                                     <!-- Post Content -->
                                     <div class="post-content">
-                                        <a href="#" class="post-cata cata-sm cata-primary">Business</a>
                                         <a href="single-post.html" class="post-title">Love Island star's boyfriend found
                                             dead after her
                                             funeral</a>
@@ -611,7 +597,6 @@
 
                                         <!-- Post Content -->
                                         <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-success">Sports</a>
                                             <a href="single-post.html" class="post-title">Searching for the 'angel' who
                                                 held me on Westminster
                                                 Bridge</a>
@@ -637,7 +622,7 @@
 
                                         <!-- Post Content -->
                                         <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-success">Sports</a>
+
                                             <a href="single-post.html" class="post-title">Searching for the 'angel' who
                                                 held me on Westminster
                                                 Bridge</a>
@@ -669,7 +654,6 @@
 
                                         <!-- Post Content -->
                                         <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-primary">Business</a>
                                             <a href="single-post.html" class="post-title">Full article Prince Charles's
                                                 'urgent' global
                                                 research</a>
@@ -695,7 +679,6 @@
 
                                         <!-- Post Content -->
                                         <div class="post-content">
-                                            <a href="#" class="post-cata cata-sm cata-primary">Business</a>
                                             <a href="single-post.html" class="post-title">Full article Prince Charles's
                                                 'urgent' global
                                                 research</a>
@@ -815,7 +798,6 @@
 
                             <!-- Post Content -->
                             <div class="post-content">
-                                <a href="#" class="post-cata cata-sm cata-success">Sports</a>
                                 <a href="single-post.html" class="post-title">Full article Prince Charles's 'urgent'
                                     global research</a>
                                 <div class="post-meta d-flex">

@@ -128,7 +128,6 @@
 
                                             <!-- Post Content -->
                                             <div class="post-content">
-                                                <a href="#" class="post-cata cata-sm cata-success">Sports</a>
                                                 <a href="single-post.php" class="post-title">Warner Bros. Developing ‘The accountant’
                                                     Sequel</a>
                                                 <div class="post-meta d-flex">
@@ -153,7 +152,6 @@
 
                                             <!-- Post Content -->
                                             <div class="post-content">
-                                                <a href="#" class="post-cata cata-sm cata-danger">Game</a>
                                                 <a href="single-post.php" class="post-title">Searching for the 'angel' who held me on
                                                     Westminste</a>
                                                 <div class="post-meta d-flex">

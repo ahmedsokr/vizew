@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 08, 2023 at 03:30 PM
+-- Generation Time: May 09, 2023 at 12:48 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -69,7 +69,7 @@ CREATE TABLE `playlist` (
   `ID` int(11) NOT NULL,
   `Name` int(100) NOT NULL,
   `UserID` int(11) NOT NULL,
-  `Channel-ID` int(11) NOT NULL
+  `ChannelID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -119,7 +119,7 @@ INSERT INTO `roles` (`ID`, `Name`) VALUES
 CREATE TABLE `subscription` (
   `ID` int(11) NOT NULL,
   `UserID` int(11) NOT NULL,
-  `Channel-ID` int(11) NOT NULL
+  `ChannelID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -150,7 +150,7 @@ CREATE TABLE `video` (
   `Title` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `Description` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
   `UserID` int(11) NOT NULL,
-  `Channel-ID` int(11) NOT NULL
+  `ChannelID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -161,7 +161,7 @@ CREATE TABLE `video` (
 
 CREATE TABLE `videolist` (
   `VideoID` int(11) NOT NULL,
-  `Playlist-ID` int(11) NOT NULL
+  `PlaylistID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -210,7 +210,7 @@ ALTER TABLE `likes`
 ALTER TABLE `playlist`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `UserID` (`UserID`),
-  ADD KEY `Channel-ID` (`Channel-ID`);
+  ADD KEY `Channel-ID` (`ChannelID`);
 
 --
 -- Indexes for table `react`
@@ -230,7 +230,7 @@ ALTER TABLE `roles`
 ALTER TABLE `subscription`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `subscription_ibfk_1` (`UserID`),
-  ADD KEY `Channel-ID` (`Channel-ID`);
+  ADD KEY `Channel-ID` (`ChannelID`);
 
 --
 -- Indexes for table `users`
@@ -245,13 +245,13 @@ ALTER TABLE `users`
 ALTER TABLE `video`
   ADD PRIMARY KEY (`ID`),
   ADD KEY `video_ibfk_1` (`UserID`),
-  ADD KEY `Channel-ID` (`Channel-ID`);
+  ADD KEY `Channel-ID` (`ChannelID`);
 
 --
 -- Indexes for table `videolist`
 --
 ALTER TABLE `videolist`
-  ADD KEY `Playlist-ID` (`Playlist-ID`),
+  ADD KEY `Playlist-ID` (`PlaylistID`),
   ADD KEY `VideoID` (`VideoID`);
 
 --
@@ -356,14 +356,14 @@ ALTER TABLE `likes`
 --
 ALTER TABLE `playlist`
   ADD CONSTRAINT `playlist_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`ID`),
-  ADD CONSTRAINT `playlist_ibfk_2` FOREIGN KEY (`Channel-ID`) REFERENCES `channel` (`ID`);
+  ADD CONSTRAINT `playlist_ibfk_2` FOREIGN KEY (`ChannelID`) REFERENCES `channel` (`ID`);
 
 --
 -- Constraints for table `subscription`
 --
 ALTER TABLE `subscription`
   ADD CONSTRAINT `subscription_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
-  ADD CONSTRAINT `subscription_ibfk_2` FOREIGN KEY (`Channel-ID`) REFERENCES `channel` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
+  ADD CONSTRAINT `subscription_ibfk_2` FOREIGN KEY (`ChannelID`) REFERENCES `channel` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `users`
@@ -376,13 +376,13 @@ ALTER TABLE `users`
 --
 ALTER TABLE `video`
   ADD CONSTRAINT `video_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`ID`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  ADD CONSTRAINT `video_ibfk_2` FOREIGN KEY (`Channel-ID`) REFERENCES `channel` (`ID`) ON DELETE NO ACTION ON UPDATE CASCADE;
+  ADD CONSTRAINT `video_ibfk_2` FOREIGN KEY (`ChannelID`) REFERENCES `channel` (`ID`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Constraints for table `videolist`
 --
 ALTER TABLE `videolist`
-  ADD CONSTRAINT `videolist_ibfk_1` FOREIGN KEY (`Playlist-ID`) REFERENCES `playlist` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `videolist_ibfk_1` FOREIGN KEY (`PlaylistID`) REFERENCES `playlist` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `videolist_ibfk_2` FOREIGN KEY (`VideoID`) REFERENCES `video` (`ID`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --

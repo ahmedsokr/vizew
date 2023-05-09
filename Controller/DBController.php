@@ -19,33 +19,23 @@ class DBController
     }
   }
 
-public function closeConnection()
-{
-    if($this->connection){
-        $this->connection->close();
+  public function closeConnection()
+  {
+    if ($this->connection) {
+      $this->connection->close();
+    } else {
+      echo " connection is not opened";
     }
-    else {
-        echo " connection is not opened";
+  }
+
+  public function select($qry)
+  {
+    $result = $this->connection->query($qry);
+    if (!$result) {
+      echo "Error : " . mysqli_errno($this->connection);
+      return false;
+    } else {
+      return $result->fetch_all(MYSQLI_ASSOC);
     }
+  }
 }
-
-    public function select($qry)
-    {
-        $result=$this->connection->query($qry);
-        if(!$result)
-        {
-            echo "Error : ".mysqli_errno($this->connection);
-            return false;
-        }
-        else 
-        {
-           return $result->fetch_all(MYSQLI_ASSOC);
-        }
-
-    }
-}
-
-
-
-
-?>
