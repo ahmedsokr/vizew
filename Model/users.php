@@ -7,6 +7,7 @@ class User
   private $userEmail;
   private $userGender;
   private $userPassword;
+  private $userNumber;
   private $userImage;
   private $userRole;
 
@@ -29,6 +30,10 @@ class User
   public function setPassword($password)
   {
     $this->userPassword = $password;
+  }
+  public function setUserNumber($number)
+  {
+    $this->userNumber = $number;
   }
   public function setImage($image)
   {
@@ -58,6 +63,10 @@ class User
   public function getUserPassword()
   {
     return $this->userPassword;
+  }
+  public function getUserNumber()
+  {
+    return $this->userNumber;
   }
   public function getUserImage()
   {
