@@ -16,9 +16,9 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                 session_start();
             }
             if ($_SESSION["userRole"] == 1) {
-                header("location: ../admin/index.php");
+                header("location: index.php");
             } else {
-                header("location: ../Client/index.php");
+                header("location: index.php");
             }
         }
     } else {
