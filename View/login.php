@@ -1,9 +1,3 @@
-<?php
-require_once("../Controller/DBController.php");
-$con = new DBController();
-$con->openConnection();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
