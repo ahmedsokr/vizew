@@ -1,42 +1,28 @@
 <?php
 require_once '../../Models/user.php';
 require_once '../../Controllers/AuthController.php';
-$errMsg="";
-if(isset($_POST['email']) && isset ($_POST['password']))
-{
-    if(!empty($_POST['email']) && !empty ($_POST['password']))
-    {
-         $user=new User;
-         $auth=new AuthController;
-         $user->email=$_POST['email'];
-         $user->password=$_POST['password'];
-         if(!$auth->login($user))
-         {
-          
-            $errMsg=$_SESSION["errMsg"];
-         }
-         else
-         {
-            if(!isset($_SESSION["userId"]))
-            {
+$errMsg = "";
+if (isset($_POST['email']) && isset($_POST['password'])) {
+    if (!empty($_POST['email']) && !empty($_POST['password'])) {
+        $user = new User;
+        $auth = new AuthController;
+        $user->email = $_POST['email'];
+        $user->password = $_POST['password'];
+        if (!$auth->login($user)) {
+
+            $errMsg = $_SESSION["errMsg"];
+        } else {
+            if (!isset($_SESSION["userId"])) {
                 session_start();
             }
-            if($_SESSION["userRole"]==1)
-            {
+            if ($_SESSION["userRole"] == 1) {
                 header("location: ../admin/index.php");
+            } else {
+                header("location: ../Client/index.php");
             }
-            else
-            {
-                header("location: ../Client/index.php"); 
-            }
-
-         }
-
-
-    }
-    else 
-    {
-        $errMsg="please fill all fields";
+        }
+    } else {
+        $errMsg = "please fill all fields";
     }
 }
 
