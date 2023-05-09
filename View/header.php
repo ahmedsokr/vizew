@@ -17,7 +17,7 @@
                     </form>
                   </div>
                   <!-- Login -->
-                  <a href="login.html" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
+                  <a href="login.php" class="login-btn"><i class="fa fa-user" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -31,7 +31,7 @@
               <!-- Menu -->
               <nav class="classy-navbar justify-content-between" id="vizewNav">
                 <!-- Nav brand -->
-                <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt="" /></a>
+                <a href="index.php" class="nav-brand"><img src="img/core-img/logo.png" alt="" /></a>
 
                 <!-- Navbar Toggler -->
                 <div class="classy-navbar-toggler">
@@ -49,7 +49,7 @@
                   <!-- Nav Start -->
                   <div class="classynav">
                     <ul>
-                      <li class="active"><a href="index.html">Home</a></li>
+                      <li class="active"><a href="index.php">Home</a></li>
                     </ul>
                   </div>
                   <!-- Nav End -->

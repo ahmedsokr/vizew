@@ -41,12 +41,12 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
                                     <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
+                                    <a href="single-post.php" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
                                     <div class="post-meta d-flex">
@@ -66,12 +66,12 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/8.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
                                     <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
+                                    <a href="single-post.php" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
                                     <div class="post-meta d-flex">
@@ -91,12 +91,12 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/9.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
                                     <a href="#" class="post-cata">Sports</a>
-                                    <a href="single-post.html" class="post-title">Reunification of migrant toddlers,
+                                    <a href="single-post.php" class="post-title">Reunification of migrant toddlers,
                                         parents should be
                                         completed Thursday</a>
                                     <div class="post-meta d-flex">
@@ -117,7 +117,7 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -143,7 +143,7 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -169,7 +169,7 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/10.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -195,7 +195,7 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -490,7 +490,7 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/14.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
@@ -514,7 +514,7 @@
                             <!-- Single Feature Post -->
                             <div class="single-feature-post video-post bg-img" style="background-image: url(img/bg-img/7.jpg)">
                                 <!-- Play Button -->
-                                <a href="video-post.html" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
+                                <a href="video.php" class="btn play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
 
                                 <!-- Post Content -->
                                 <div class="post-content">
