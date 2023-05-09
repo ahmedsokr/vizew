@@ -62,31 +62,19 @@
                             <div class="line"></div>
                         </div>
 
-                        <?php 
-
-                            if($errMsg!="")
-                            {
-
-                                ?>
-                                     <div clss="alert alert-danger" role="alert"><?php echo $errMsg ?></div>
-
-                                <?php
-                            }
-                        ?>
-                            <form action="login.php" method="post">
-                                 <div class="form-group">
-                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or User Name" name="email">
-                                 </div>
-                                 <div class="form-group">
-                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
-                                </div>
-                            </div>
-                            <button type="submit" class="btn vizew-btn w-100 mt-30">Login</button>
-                        </form>
                     </div>
+                    <div class="form-group">
+                        <div class="custom-control custom-checkbox mr-sm-2">
+                            <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                            <label class="custom-control-label" for="customControlAutosizing">Remember me</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn vizew-btn w-100 mt-30">Login</button>
+                    </form>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- ##### Login Area End ##### -->
 
