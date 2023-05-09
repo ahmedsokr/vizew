@@ -134,32 +134,6 @@
                                 to the dal. The delicate feathery leaves of dill are also rich in Vitamin A, C and minerals like iron
                                 and manganese.</p>
 
-                            <p>Dals or lentils are packed with proteins and especially in a vegetarian diet, lentils are the main
-                                source of protein. It is amazing how this humble yellow moong dal can be made into so many recipes from
-                                a plain dal khichdi to mangodi ki sabzi to the traditional Indian desserts like moong dal halwa.</p>
-
-                            <blockquote class="vizew-blockquote mb-15">
-                                <h5 class="blockquote-text">“If you’re going to try, go all the way. There is no other feeling like
-                                    that. You will be alone with the gods.”</h5>
-                                <h6>Ollie Schneider - CEO Deercreative</h6>
-                            </blockquote>
-
-                            <p>Dals or lentils are packed with proteins and especially in a vegetarian diet, lentils are the main
-                                source of protein. It is amazing how this humble yellow moong dal can be made into so many recipes from
-                                a plain dal khichdi to mangodi ki sabzi to the traditional Indian desserts like moong dal halwa. Fresh
-                                dill should be added only at the end of cooking, much like fresh coriander leaves.</p>
-
-                            <h4>Immediate Dividends</h4>
-
-                            <ul class="unordered-list mb-0">
-                                <li>Wash the dal in 3-4 changes of water and soak in room temperature water for 10 mins while you finish
-                                    the rest of preparation.</li>
-                                <li>Drain and pressure cook with salt, turmeric and water for 2 whistles.</li>
-                                <li>Remove the cooker from heat and open only after all the steam has escaped on its own.</li>
-                                <li>While the dal is cooking, heat ghee in a pan. Add hing and cumin seeds.</li>
-                                <li>When the seeds start to crackle, add ginger, and green chillies. Sauté for a minute.</li>
-                                <li>Add tomatoes and a little salt. Mix well. Cook for about 5 mins with occasional stirring.</li>
-                            </ul>
 
                             <!-- Post Author -->
                             <div class="vizew-post-author d-flex align-items-center py-5">
