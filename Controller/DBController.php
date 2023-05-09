@@ -19,7 +19,7 @@ class DBController
     }
   }
 
- public function closeConnection()
+public function closeConnection()
 {
     if($this->connection){
         $this->connection->close();

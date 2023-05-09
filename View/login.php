@@ -1,7 +1,46 @@
 <?php
-require_once("../Controller/DBController.php");
-$con = new DBController();
-$con->openConnection();
+require_once '../../Models/user.php';
+require_once '../../Controllers/AuthController.php';
+$errMsg="";
+if(isset($_POST['email']) && isset ($_POST['password']))
+{
+    if(!empty($_POST['email']) && !empty ($_POST['password']))
+    {
+         $user=new User;
+         $auth=new AuthController;
+         $user->email=$_POST['email'];
+         $user->password=$_POST['password'];
+         if(!$auth->login($user))
+         {
+          
+            $errMsg=$_SESSION["errMsg"];
+         }
+         else
+         {
+            if(!isset($_SESSION["userId"]))
+            {
+                session_start();
+            }
+            if($_SESSION["userRole"]==1)
+            {
+                header("location: ../admin/index.php");
+            }
+            else
+            {
+                header("location: ../Client/index.php"); 
+            }
+
+         }
+
+
+    }
+    else 
+    {
+        $errMsg="please fill all fields";
+    }
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -67,15 +106,20 @@ $con->openConnection();
                             <h4>Great to have you back!</h4>
                             <div class="line"></div>
                         </div>
-
-                        <form action="index.html" method="post">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or User Name">
+                            <form action="login.php" method="post">
+                                 <div class="form-group">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or User Name" name="email">
+                                 </div>
+                                 <div class="form-group">
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                                </div>
+                                <div class="form-group">
+                                  <div class="custom-control custom-checkbox mr-sm-2">
+                                     <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                     <label class="custom-control-label" for="customControlAutosizing">Remember me</label>
+                                 </div>
                             </div>
-                            <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn vizew-btn w-100 mt-30">Login</button>
+                                    <button type="submit" class="btn vizew-btn w-100 mt-30">Login</button>
                         </form>
                     </div>
                 </div>
