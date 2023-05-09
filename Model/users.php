@@ -1,6 +1,7 @@
-<?php 
+<?php
 
-class User {
+class User
+{
   private $userId;
   private $userName;
   private $userEmail;
@@ -8,61 +9,61 @@ class User {
   private $userPassword;
   private $userImage;
   private $userRole;
-  
-  public function setUserId ($id) 
+
+  public function setUserId($id)
   {
     $this->userId = $id;
   }
-  public function setUserName ($name) 
+  public function setUserName($name)
   {
     $this->userName = $name;
   }
-  public function setUserEmail ($email) 
+  public function setUserEmail($email)
   {
     $this->userEmail = $email;
   }
-  public function setUserGender ($gender) 
+  public function setUserGender($gender)
   {
     $this->userGender = $gender;
   }
-  public function setPassword ($password) 
+  public function setPassword($password)
   {
     $this->userPassword = $password;
   }
-  public function setImage ($image) 
+  public function setImage($image)
   {
     $this->userImage = $image;
   }
-  public function setUserRole ($role) 
+  public function setUserRole($role)
   {
     $this->userRole = $role;
   }
 
-  public function getUserId () 
+  public function getUserId()
   {
     return $this->userId;
   }
-  public function getUserName () 
+  public function getUserName()
   {
     return $this->userName;
   }
-  public function getUserEmail () 
+  public function getUserEmail()
   {
     return $this->userEmail;
   }
-  public function getUserGender () 
+  public function getUserGender()
   {
     return $this->userGender;
   }
-  public function getUserPassword () 
+  public function getUserPassword()
   {
     return $this->userPassword;
   }
-  public function getUserImage () 
+  public function getUserImage()
   {
     return $this->userImage;
   }
-  public function getUserRole () 
+  public function getUserRole()
   {
     return $this->userRole;
   }
