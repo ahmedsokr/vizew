@@ -106,6 +106,17 @@ if(isset($_POST['email']) && isset ($_POST['password']))
                             <h4>Great to have you back!</h4>
                             <div class="line"></div>
                         </div>
+                        <?php 
+
+                            if($errMsg!="")
+                            {
+
+                                ?>
+                                     <div clss="alert alert-danger" role="alert"><?php echo $errMsg ?></div>
+
+                                <?php
+                            }
+                        ?>
                             <form action="login.php" method="post">
                                  <div class="form-group">
                                       <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or User Name" name="email">
