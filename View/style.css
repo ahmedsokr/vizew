@@ -2521,10 +2521,10 @@ input:focus {
   height: 48px;
   width: 100%;
   background-color: #393c3d;
-  font-size: 12px;
+  font-size: 15px;
   margin-bottom: 15px;
   padding: 10px 30px;
-  color: #ffffff;
+  color: #000;
   -webkit-transition-duration: 500ms;
   -o-transition-duration: 500ms;
   transition-duration: 500ms;

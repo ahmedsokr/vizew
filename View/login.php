@@ -75,12 +75,6 @@ $con->openConnection();
                             <div class="form-group">
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                             </div>
-                            <div class="form-group">
-                                <div class="custom-control custom-checkbox mr-sm-2">
-                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                                    <label class="custom-control-label" for="customControlAutosizing">Remember me</label>
-                                </div>
-                            </div>
                             <button type="submit" class="btn vizew-btn w-100 mt-30">Login</button>
                         </form>
                     </div>
