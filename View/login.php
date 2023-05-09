@@ -1,3 +1,9 @@
+<?php
+require_once("../Controller/DBController.php");
+$con = new DBController();
+$con->openConnection();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -61,13 +67,18 @@
                             <h4>Great to have you back!</h4>
                             <div class="line"></div>
                         </div>
-
-                        <form action="index.html" method="post">
+                        <form action="login.php" method="post">
                             <div class="form-group">
-                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or User Name">
+                                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email or User Name" name="email">
                             </div>
                             <div class="form-group">
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                            </div>
+                            <div class="form-group">
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                    <label class="custom-control-label" for="customControlAutosizing">Remember me</label>
+                                </div>
                             </div>
                             <button type="submit" class="btn vizew-btn w-100 mt-30">Login</button>
                         </form>
