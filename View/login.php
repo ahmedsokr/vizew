@@ -112,6 +112,12 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                             <div class="form-group">
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
                             </div>
+                            <p>
+                                <span>Create New Account!</span>
+                                <a href="signup.php">
+                                    <span style="color:#fff;text-decoration:underline"> Signup</span>
+                                </a>
+                            </p>
                             <button type="submit" class="btn vizew-btn w-100 mt-30">Login</button>
                         </form>
                     </div>
