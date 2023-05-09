@@ -5,7 +5,9 @@ require_once 'DBController.php';
 class AuthController
 {
     private $userEmail;
+    private $userName;
     private $userPassword;
+    private $userNumber;
     protected $db;
 
     public function login(User $user)
@@ -38,4 +40,41 @@ class AuthController
             return false;
         }
     }
+
+    public function register(User $user)
+    {
+        $this->db = new DBController();
+
+        if($this->db->openConnection())
+        {
+            $this->userName = $user->getUserName();
+            $this->userEmail = $user->getUserEmail();
+            $this->userPassword = $user->getUserPassword();
+            $this->userNumber = $user->getUserNumber();
+
+            $query = "insert into users(UserName , Email , Number , Password , roled) values ('$this->userName' , '$this->userEmail' , $this->userNumber , '$this->userPassword' , 2)";
+            $result = $this->db->insert($query);
+            if($result != false)
+            {
+                session_start();
+                $_SESSION["userId"] = $result;
+                $_SESSION["userName"] = $this->userName;
+                $_SESSION["userRole"] = "Client";
+                return true;
+            }
+            else
+            {
+                $_SESSION["errMsg"] = "Something Went Wrong ... Please Try Again";
+                return false;
+            }
+        }
+        else
+        {
+            echo "Error in Database connection";
+            return false;
+        }
+    }
+
 }
+
+?>
