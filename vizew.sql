@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2023 at 12:48 PM
+-- Generation Time: May 10, 2023 at 04:12 AM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `videotube`
+-- Database: `vizew`
 --
 
 -- --------------------------------------------------------
@@ -146,12 +146,19 @@ CREATE TABLE `users` (
 --
 
 CREATE TABLE `video` (
-  `ID` int(11) NOT NULL,
-  `Title` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `Description` varchar(1000) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
-  `UserID` int(11) NOT NULL,
-  `ChannelID` int(11) NOT NULL
+  `id` int(11) NOT NULL,
+  `title` varchar(200) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `description` varchar(800) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `thumbnail` varchar(300) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `video` varchar(300) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `video`
+--
+
+INSERT INTO `video` (`id`, `title`, `description`, `thumbnail`, `video`) VALUES
+(3, 'ahmed', 'thanks for me', 'proj.jpg', 'pro.mp4');
 
 -- --------------------------------------------------------
 
@@ -243,9 +250,7 @@ ALTER TABLE `users`
 -- Indexes for table `video`
 --
 ALTER TABLE `video`
-  ADD PRIMARY KEY (`ID`),
-  ADD KEY `video_ibfk_1` (`UserID`),
-  ADD KEY `Channel-ID` (`ChannelID`);
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `videolist`
@@ -318,7 +323,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `video`
 --
 ALTER TABLE `video`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `view`
@@ -370,13 +375,6 @@ ALTER TABLE `subscription`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `users_ibfk_1` FOREIGN KEY (`roled`) REFERENCES `roles` (`ID`);
-
---
--- Constraints for table `video`
---
-ALTER TABLE `video`
-  ADD CONSTRAINT `video_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `users` (`ID`) ON DELETE NO ACTION ON UPDATE CASCADE,
-  ADD CONSTRAINT `video_ibfk_2` FOREIGN KEY (`ChannelID`) REFERENCES `channel` (`ID`) ON DELETE NO ACTION ON UPDATE CASCADE;
 
 --
 -- Constraints for table `videolist`

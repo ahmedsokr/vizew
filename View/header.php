@@ -50,6 +50,8 @@
                   <div class="classynav">
                     <ul>
                       <li class="active"><a href="index.php">Home</a></li>
+                      <li class="active"><a href="upload.php">Upload</a></li>
+                      <li class="active"><a href="account.php">Account</a></li>
                     </ul>
                   </div>
                   <!-- Nav End -->

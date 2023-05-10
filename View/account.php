@@ -19,9 +19,9 @@
   <!-- Header Style -->
   <link rel="stylesheet" href="style.css" />
   <style>
-  body>div.wrapper>div {
-    margin-top: 100px;
-  }
+    body>div.wrapper>div {
+      margin-top: 100px;
+    }
   </style>
 </head>
 

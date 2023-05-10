@@ -2546,4 +2546,8 @@ textarea.form-control {
   height: 140px;
 }
 
+body > section.hero--area.section-padding-80 > div {
+  margin-top: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */
