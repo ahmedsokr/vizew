@@ -5,9 +5,9 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Streamit - Responsive Bootstrap 4 Admin Dashboard Template</title>
+  <title>Vizew</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+  <link rel="icon" href="img/core-img/favicon.ico" />
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <!-- Typography CSS -->
@@ -18,7 +18,11 @@
   <link rel="stylesheet" href="assets/css/responsive.css">
   <!-- Header Style -->
   <link rel="stylesheet" href="style.css" />
-
+  <style>
+  body>div.wrapper>div {
+    margin-top: 100px;
+  }
+  </style>
 </head>
 
 <body>
@@ -37,58 +41,33 @@
     <?php require_once("header.php") ?>
 
     <!-- Page Content  -->
-    <div class="col-lg-6">
-      <div class="iq-card">
-        <div class="iq-card-header d-flex justify-content-between">
-          <div class="iq-header-title">
-            <h4 class="card-title">Account Setting</h4>
+    <div class="container">
+      <div class="col-lg-6">
+        <div class="iq-card">
+          <div class="iq-card-header d-flex justify-content-between">
+            <div class="iq-header-title">
+              <h4 class="card-title">Account Setting</h4>
+            </div>
           </div>
-        </div>
-        <div class="iq-card-body">
-          <div class="acc-edit">
-            <form>
-              <div class="form-group">
-                <label for="uname">User Name:</label>
-                <input type="text" class="form-control" id="uname" value="Barry@01">
-              </div>
-              <div class="form-group">
-                <label for="email">Email Id:</label>
-                <input type="email" class="form-control" id="email" value="Barryjohn@gmail.com">
-              </div>
-              <div class="form-group">
-                <label for="altemail">Alternate Email:</label>
-                <input type="email" class="form-control" id="altemail" value="designtheme@gmail.com">
-              </div>
-              <div class="form-group">
-                <label class="d-block">Language Known:</label>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="english" checked="">
-                  <label class="custom-control-label" for="english">English</label>
+          <div class="iq-card-body">
+            <div class="acc-edit">
+              <form>
+                <div class="form-group">
+                  <label for="uname">User Name:</label>
+                  <input type="text" class="form-control" id="uname">
                 </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="french" checked="">
-                  <label class="custom-control-label" for="french">French</label>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" class="form-control" id="email">
                 </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="hindi">
-                  <label class="custom-control-label" for="hindi">Hindi</label>
+                <div class="form-group">
+                  <label for="altemail">Alternate Email:</label>
+                  <input type="email" class="form-control" id="altemail">
                 </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="spanish" checked="">
-                  <label class="custom-control-label" for="spanish">Spanish</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="arabic">
-                  <label class="custom-control-label" for="arabic">Arabic</label>
-                </div>
-                <div class="custom-control custom-checkbox custom-control-inline">
-                  <input type="checkbox" class="custom-control-input" id="italian">
-                  <label class="custom-control-label" for="italian">Italian</label>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-              <button type="reset" class="btn iq-bg-danger">Cancel</button>
-            </form>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn iq-bg-danger">Cancel</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
